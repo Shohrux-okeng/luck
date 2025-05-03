@@ -1,15 +1,12 @@
-const countElement = document.getElementById('count');
-const incrementButton = document.getElementById('increment');
-const resetButton = document.getElementById('reset');
-
 let count = 0;
-
-incrementButton.addEventListener('click', () => {
+function ins() {
+    const countElement = document.querySelector('.count');
     count++;
     countElement.textContent = count;
-});
+}
 
-resetButton.addEventListener('click', () => {
+function reset() {
+    const countElement = document.querySelector('.count');
     count = 0;
     countElement.textContent = count;
-});
+}
